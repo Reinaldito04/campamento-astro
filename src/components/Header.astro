@@ -1,0 +1,77 @@
+
+---
+import Animation from "./Animation";
+---
+
+<section id="header">
+<Animation  client:load/>
+<div class="container contenedor-logo" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+data-aos-duration="2000">
+    <img src="/logosinfondo.png" alt=""/>
+</div>
+
+<div class="container-home"data-aos="fade-up" data-aos-easing="ease-out-cubic"
+data-aos-duration="2000" >
+    <img src="/arbolito.png" class=" arbol" alt="" />
+</div>
+<div class="container-tree" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+data-aos-duration="2000">
+    <img src="/casita.png" class="home" alt="" />
+</div>
+</section>
+
+
+<style>
+    .container-home{
+        margin-top: -300px;
+        margin-left: -150px;
+    }
+    
+   
+    .container-tree{
+        position: absolute;
+        
+        margin-top: -500px;
+        align-items: end;
+        display: flex;
+        margin-left: 80%;
+    }
+ 
+    .tree{
+        height: 500px;
+        width: 500px;
+        transform: rotate(-0deg);
+        margin-left: 10px;
+        
+    }
+
+    section{
+        height: 80dvh;
+        background-image: url("/fondo.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        clip-path: polygon(20% 0%, 80% 0, 100% 0, 100% 80%, 64% 100%, 22% 78%, 0 100%,0 0);
+        
+    }
+    .contenedor-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 80%;
+        
+    }
+    img{
+        margin: 0 auto;
+        height: 450px;
+        width: auto;
+    }
+    
+</style>
+
+<script>
+
+    import { aosInit } from "../js/aos";
+    aosInit();
+</script>

@@ -1,0 +1,167 @@
+<section id="contact">
+  <div class="container-fluid pt-5">
+    <div class="row contenedor-footer">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="container-img">
+            <img src="/caraja.png" alt="" class="photo" />
+          </div>
+          <div class="contenedor-character" data-aos="fade-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000">
+            <img src="/mostro4.png" alt="" class="character" />
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="container contenedor-form">
+            <h4 class="">Contactanos</h4>
+
+            <div class="form-group">
+              <label class=" form-label" for=""
+                >Nombre Y Apellido</label
+              >
+              <input type="text" class="form-control" name="" id="" />
+              <label class=" form-label" for="">Email</label>
+              <input type="email" class="form-control" name="" id="" />
+              <label class=" form-label" for="">Mensaje</label>
+              <textarea name="" class="form-control" id=""></textarea>
+
+              <div class="container-boton text-center mt-2">
+                <button class="btn">Enviar</button>
+              </div>
+              <div class="container-iconos">
+                <div class="contenedor-img">
+                  <img src="/facebook.svg" class="icono" alt="" />
+                </div>
+                <div class="contenedor-img">
+                  <img src="/instagram.svg" class="icono" alt="" />
+                </div>
+                <div class="contenedor-img">
+                  <img src="/ws.svg" class="icono" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .contenedor-footer {
+      border-bottom: 2px solid yellow;
+      padding-bottom: 210px;
+    }
+    .character {
+      transform: scaleX(-1);
+      height: auto;
+      width: 800px;
+      margin-top: -15%;
+      position: absolute;
+    }
+    .container-img {
+      margin-left: 200px !important;
+    }
+    .photo {
+      border-radius: 50%;
+      border: 4px solid transparent;
+      outline: 4px solid white;
+    }
+    input {
+      border: none;
+      background-color: #abfffb;
+      color: black;
+      z-index: 999;
+    }
+    input:focus {
+      color: black;
+      background-color: #abfffb;
+
+      outline: none;
+    }
+    textarea {
+      border: none;
+      background-color: #abfffb;
+     
+      color: black;
+     
+      resize: none;
+    }
+    textarea:focus {
+      background-color: #abfffb;
+      border: none;
+      color: black;
+    }
+    .icono:hover {
+      transform: translateY(-10px);
+    }
+    .contenedor-form {
+      border: 2px solid #f2cb05;
+      padding-bottom: 20px;
+      border-radius: 15px;
+      margin-top: 100px;
+    }
+
+    .container-iconos {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      margin-top: 10px;
+      width: 50%;
+    }
+    button {
+      
+   font-weight: bolder;
+      background-color: #FFF001;
+      color: #16276C;
+    }
+    button:hover {
+      background-color: #fff019;
+      color: #04196d;
+    }
+    .icono {
+      transition: all 0.8s;
+      height: 40px;
+      width: 40px;
+    }
+    label{
+      color: #FFF001;
+    }
+    h4 {
+      text-align: center;
+      color: #FFF001;
+      margin-top: 20px;
+    }
+    img {
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+    }
+    .container-img {
+      display: flex;
+      margin: 0 auto;
+    }
+    .contenedor-footer {
+      width: 100%;
+
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #FFF001  ;
+    }
+    section {
+      align-items: center;
+      margin-top: -60px;
+      height: 110dvh;
+      background-image: url("/fondo.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      clip-path: polygon(25% 0, 71% 15%, 100% 10%, 100% 100%, 0 100%, 0 12%);
+    }
+  </style>
+</section>

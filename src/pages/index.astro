@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Home from "../components/Home.astro";
+import Header from "../components/Header.astro";
+import Information from "../components/Information.astro";
+import Segundasection from "../components/Segundasection.astro";
+import Card from "../components/Card.astro";
+import Tercerasection from "../components/Tercerasection.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <Navbar />
+  <Header />
+  <Home />
+  <Information />
+  <Segundasection />
+  <Tercerasection />
+</Layout>
+
+<style>
+  body {
+    overflow-x: hidden;
+  }
+</style>
